@@ -2,10 +2,10 @@
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Inherit common product files
-$(call inherit-product, vendor/frank/configs/common.mk)
+$(call inherit-product, vendor/tesla/configs/common.mk)
 
 # Setup device specific product configuration
-PRODUCT_NAME := frank_n6
+PRODUCT_NAME := tesla_shamu
 PRODUCT_DEVICE := shamu
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Shamu

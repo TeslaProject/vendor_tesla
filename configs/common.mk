@@ -1,8 +1,8 @@
 # Brand
-PRODUCT_BRAND ?= frank
+PRODUCT_BRAND ?= tesla
 
 # Local path for prebuilts
-LOCAL_PATH:= vendor/frank/prebuilts/common/system
+LOCAL_PATH:= vendor/tesla/prebuilts/common/system
 
 # Common build prop overrides 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
      
 # Common overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/frank/overlays/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlays/common
 
 # Needed Packages
 PRODUCT_PACKAGES += \

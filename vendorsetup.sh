@@ -1,10 +1,2 @@
-add_lunch_combo frank_n4-userdebug
-add_lunch_combo frank_n5-userdebug
-add_lunch_combo frank_n6-userdebug
-add_lunch_combo frank_n7_2012_mobile-userdebug
-add_lunch_combo frank_n7_2012_wifi-userdebug
-add_lunch_combo frank_n7_2013_lte-userdebug
-add_lunch_combo frank_n7_2013_wifi-userdebug
-add_lunch_combo frank_9-userdebug
-add_lunch_combo frank_10-userdebug
+add_lunch_combo tesla_n6-userdebug
 
