@@ -1,23 +1,38 @@
-# Inherit AOSP device configuration for shamu
-$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
+#
+# Copyright 2013 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
-# Inherit common product files
-$(call inherit-product, vendor/tesla/configs/common.mk)
+# Sample: This is where we'd set a backup provider if we had one
+# $(call inherit-product, device/sample/products/backup_overlay.mk)
 
-# Setup device specific product configuration
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/tesla/config/common.mk)
+#$(call inherit-product, vendor/tesla/config/nfc_enhanced.mk)
+
 PRODUCT_NAME := tesla_shamu
 PRODUCT_DEVICE := shamu
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Shamu
+PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Build prop fingerprint overrides
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME="shamu" BUILD_FINGERPRINT="google/shamu/shamu:5.1/LMY47E/1743759:user/release-keys" PRIVATE_BUILD_DESC="shamu-user 5.1 LMY47D 1743759 release-keys"
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=shamu BUILD_FINGERPRINT=google/shamu/shamu:5.1.0/LMY47E/1602158:user/release-keys PRIVATE_BUILD_DESC="shamu-user 5.1.0 LMY47E 1602158 release-keys"
 
-#fmas n6 specific 
-PRODUCT_PROPERTY_OVERRIDES += \
-    fmas.spkr_6ch=35,20,110 \
-    fmas.spkr_2ch=35,25 \
-    fmas.spkr_angles=10 \
-    fmas.spkr_sgain=0 \
-    media.aac_51_output_enabled=true \
+$(call inherit-product, device/moto/shamu/device.mk)
+$(call inherit-product-if-exists, vendor/motorola/shamu/device-vendor.mk)
