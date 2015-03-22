@@ -21,7 +21,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/tesla/config/common.mk)
+$(call inherit-product, vendor/tesla/configs/common.mk)
 #$(call inherit-product, vendor/tesla/config/nfc_enhanced.mk)
 
 PRODUCT_NAME := tesla_shamu
