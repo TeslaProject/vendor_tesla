@@ -35,7 +35,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlays/common
 # Needed Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    libsepol
+    libsepol \
+    Camera2
+    
 
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
@@ -52,7 +54,7 @@ PRODUCT_COPY_FILES += \
 
 # Backuptool support
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/addon.d/50-simpleaosp.sh:system/addon.d/50-simepleaosp.sh \
+    $(LOCAL_PATH)/addon.d/50-tesla.sh:system/addon.d/50-tesla.sh \
     $(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
     $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh
 
