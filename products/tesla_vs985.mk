@@ -1,7 +1,7 @@
 $(call inherit-product, device/lge/vs985/full_vs985.mk)
 
 # Inherit some common Tesla stuff.
-$(call inherit-product, vendor/tesla/config/common.mk)
+$(call inherit-product, vendor/tesla/configs/common.mk)
 
 PRODUCT_NAME := tesla_vs985
 
