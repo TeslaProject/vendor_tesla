@@ -35,8 +35,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlays/common
 # Needed Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    libsepol \
-    Camera2 
+    libsepol 
     
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
