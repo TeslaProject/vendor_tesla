@@ -37,6 +37,12 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     libsepol 
     
+ # Additional packages
+ PRODUCT_PACKAGES += \
+    AudioFX \
+    Eleven \
+    LockClock
+     
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
