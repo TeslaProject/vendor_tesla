@@ -57,7 +57,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addon.d/50-tesla.sh:system/addon.d/50-tesla.sh \
     $(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
-    $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh
+    $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/tesla/prebuilt/bin/blacklist:system/addon.d/blacklist
+
+# init.d support
+PRODUCT_COPY_FILES += \
+        vendor/tesla/prebuilt/bin/sysinit:system/bin/sysinit
+
+# Init script file with DarkKat extras
+PRODUCT_COPY_FILES += \
+    vendor/tesla/prebuilt/etc/init.local.rc:root/init.tesla.rc
 
 # Bootanimation support
 PRODUCT_COPY_FILES += \
