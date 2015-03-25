@@ -16,13 +16,17 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from yuga device
 $(call inherit-product, device/sony/yuga/full_yuga.mk)
 
-# Inherit common Phone stuff.
-$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
-
 # Enhanced NFC
-$(call inherit-product, vendor/tesla/config/nfc_enhanced.mk)
+#$(call inherit-product, vendor/tesla/configs/nfc_enhanced.mk)
+
+# Inherit some common Tesla stuff.
+$(call inherit-product, vendor/tesla/configs/common.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6603 BUILD_FINGERPRINT=Sony/C6603/C6603:4.4.4/10.5.1.A.0.283/5P53rQ:user/release-keys PRIVATE_BUILD_DESC="C6603-user 4.4.4 10.5.1.A.0.283 5P53rQ release-keys"
 
