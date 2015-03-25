@@ -1,4 +1,5 @@
 add_lunch_combo tesla_bacon-userdebug
+add_lunch_combo tesla_d851-userdebug
 add_lunch_combo tesla_flo-userdebug
 add_lunch_combo tesla_hammerhead-userdebug
 add_lunch_combo tesla_shamu-userdebug
