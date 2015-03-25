@@ -2,6 +2,7 @@ add_lunch_combo tesla_bacon-userdebug
 add_lunch_combo tesla_d851-userdebug
 add_lunch_combo tesla_flo-userdebug
 add_lunch_combo tesla_hammerhead-userdebug
+add_lunch_combo tesla_m8-userdebug
 add_lunch_combo tesla_shamu-userdebug
 add_lunch_combo tesla_vs985-userdebug
 add_lunch_combo tesla_yuga-userdebug
