@@ -8,4 +8,4 @@ add_lunch_combo tesla_m8-userdebug
 add_lunch_combo tesla_shamu-userdebug
 add_lunch_combo tesla_vs985-userdebug
 add_lunch_combo tesla_yuga-userdebug
-add_lunch_combo tesla_jflte-userdebug
+add_lunch_combo tesla_jfltetmo-userdebug
