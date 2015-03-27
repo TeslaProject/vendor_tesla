@@ -40,7 +40,6 @@ PRODUCT_PACKAGES += \
  # Additional packages
  PRODUCT_PACKAGES += \
     AudioFX \
-    Eleven \
     LockClock
      
 # Enable sip+voip on all targets
