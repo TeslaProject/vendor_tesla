@@ -21,10 +21,13 @@
 # lines, full and maguro, hence its name.
 #
 
-# Inherit m8-specific vendor tree
+$(call inherit-product, device/samsung/jfltetmo/full_m8.mk)
 
-# Inherit from m8
-$(call inherit-product, device/htc/m8/device.mk)
+# Enhanced NFC
+#$(call inherit-product, vendor/tesla/config/nfc_enhanced.mk)
+
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/tesla/configs/common.mk)
 
 PRODUCT_NAME := full_m8
 PRODUCT_DEVICE := m8
