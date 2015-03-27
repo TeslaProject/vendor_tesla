@@ -21,7 +21,7 @@
 # lines, full and maguro, hence its name.
 #
 
-$(call inherit-product, device/samsung/jfltetmo/full_m8.mk)
+$(call inherit-product, device/htc/m8/full_m8.mk)
 
 # Enhanced NFC
 #$(call inherit-product, vendor/tesla/config/nfc_enhanced.mk)
