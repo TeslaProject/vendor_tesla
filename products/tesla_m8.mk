@@ -6,4 +6,6 @@ $(call inherit-product, device/htc/m8/full_m8.mk)
 # Inherit some common Tesla stuff.
 $(call inherit-product, vendor/tesla/configs/common.mk)
 
+PRODUCT_DEVICE := m8
+
 PRODUCT_NAME := tesla_m8
