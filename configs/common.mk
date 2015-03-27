@@ -31,6 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
      
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlays/common
++PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlay
 
 # Needed Packages
 PRODUCT_PACKAGES += \
