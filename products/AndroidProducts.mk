@@ -1,5 +1,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/tesla_bacon.mk \
+    $(LOCAL_DIR)/tesla_d850.mk \
     $(LOCAL_DIR)/tesla_d851.mk \
     $(LOCAL_DIR)/tesla_d852.mk \
     $(LOCAL_DIR)/tesla_flo.mk \
