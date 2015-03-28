@@ -17,8 +17,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/hammerhead/hammerhead:5.1/LMY47D/1743759:user/release-keys \
     PRIVATE_BUILD_DESC="hammerhead-user 5.1 LMY47D 1743759 release-keys"
 
-# Inherit media effect blobs
--include vendor/tesla/products/common_media_effects.mk
-
 # Bootanimation
-PRODUCT_BOOTANIMATION := vendor/tesla/proprietary/common/hammerhead/system/media/bootanimation.zip
+#PRODUCT_BOOTANIMATION := vendor/tesla/proprietary/common/hammerhead/system/media/bootanimation.zip
