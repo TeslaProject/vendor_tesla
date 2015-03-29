@@ -168,4 +168,5 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/xbin/sesearch:system/xbin/sesearch \
         $(LOCAL_PATH)/xbin/sepolicy-inject:system/xbin/sepolicy-inject \
 
-        
+# Include UBERTC Info
+include vendor/tesla/configs/uber.mk        
