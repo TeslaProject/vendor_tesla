@@ -68,6 +68,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/tesla/prebuilt/etc/init.local.rc:root/init.tesla.rc
 
+# Kernel Auditor
+PRODUCT_COPY_FILES += \
+    vendor/tesla/prebuilt/apps/tesla_auditor.apk:system/app/Auditor/Auditor.apk
+
 # Bootanimation support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
