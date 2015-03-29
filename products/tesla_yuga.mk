@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file is the build configuration for a full Android
-# build for grouper hardware. This cleanly combines a set of
-# device-specific aspects (drivers) with a device-agnostic
-# product configuration (apps).
-#
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from bacon device
-$(call inherit-product, device/oneplus/bacon/bacon.mk)
+# Inherit from yuga device
+$(call inherit-product, device/sony/yuga/full_yuga.mk)
 
 # Enhanced NFC
 #$(call inherit-product, vendor/tesla/configs/nfc_enhanced.mk)
@@ -31,15 +28,7 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 # Inherit some common Tesla stuff.
 $(call inherit-product, vendor/tesla/configs/common.mk)
 
-PRODUCT_NAME := tesla_bacon
-PRODUCT_DEVICE := bacon
-PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := A0001
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6603 BUILD_FINGERPRINT=Sony/C6603/C6603:4.4.4/10.5.1.A.0.283/5P53rQ:user/release-keys PRIVATE_BUILD_DESC="C6603-user 4.4.4 10.5.1.A.0.283 5P53rQ release-keys"
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-PRODUCT_BRAND := oneplus
-TARGET_VENDOR_PRODUCT_NAME := bacon
-TARGET_VENDOR_DEVICE_NAME := A0001
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A0001 PRODUCT_NAME=bacon
-
+PRODUCT_NAME := tesla_yuga
+PRODUCT_DEVICE := yuga

@@ -21,12 +21,12 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
   
-    <!-- Disable stock OTA components if installed -->
+    <!-- Disable stock OTA components if installed 
     <string-array name="config_disabledComponents" translatable="false">
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity</item>
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService</item>
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver</item>
-    </string-array>
+    </string-array -->
  
     <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
          on the current state of the device.
