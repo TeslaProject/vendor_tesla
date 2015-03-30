@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
 
 # Proprietary latinime lib needed for swyping
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/lib/libjni_latinime.so:system/lib/libjni_latinimegoogle.so
+    $(LOCAL_PATH)/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
     
 # Blobs for media effects
 PRODUCT_COPY_FILES += \
