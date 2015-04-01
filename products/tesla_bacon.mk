@@ -23,7 +23,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from bacon device
-$(call inherit-product, device/oneplus/bacon/bacon.mk)
+$(call inherit-product, device/oneplus/bacon/device.mk)
 
 # Enhanced NFC
 #$(call inherit-product, vendor/tesla/configs/nfc_enhanced.mk)
@@ -33,15 +33,15 @@ $(call inherit-product, vendor/tesla/configs/common.mk)
 
 PRODUCT_NAME := tesla_bacon
 PRODUCT_DEVICE := bacon
-PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := A0001
+PRODUCT_MANUFACTURER := OnePlus
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-PRODUCT_BRAND := oneplus
-TARGET_VENDOR_PRODUCT_NAME := bacon
-TARGET_VENDOR_DEVICE_NAME := A0001
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A0001 PRODUCT_NAME=bacon
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	BUILD_PRODUCT=FIND7OP \
+	TARGET_DEVICE=A0001 \
+	BUILD_FINGERPRINT="4.3/JLS36C/1390465867:user/release-keys" \
+	PRIVATE_BUILD_DESC="msm8974-user 4.3 JLS36C eng.root.20140510.152835 release-keys"
 
 # Inherit from proprietary blobs
 $(call inherit-product-if-exists, vendor/oppo/find7op/find7op-vendor.mk)
