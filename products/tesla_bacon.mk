@@ -19,8 +19,8 @@
 # product configuration (apps).
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from aosp products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
@@ -42,4 +42,9 @@ PRODUCT_BRAND := oneplus
 TARGET_VENDOR_PRODUCT_NAME := bacon
 TARGET_VENDOR_DEVICE_NAME := A0001
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A0001 PRODUCT_NAME=bacon
+
+# Inherit from proprietary blobs
+$(call inherit-product-if-exists, vendor/oppo/find7op/find7op-vendor.mk)
+$(call inherit-product-if-exists, vendor/oppo/find7a/find7a-vendor.mk)
+
 
