@@ -28,6 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0 \
     ro.mod.display.version=1.0 \
     drm.service.enabled=true \
+
+# Additional prop overrides
+    dalvik.vm.image-dex2oat-filter=everything \
+    dalvik.vm.dex2oat-filter=everything
      
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlays/common
