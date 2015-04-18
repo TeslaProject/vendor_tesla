@@ -71,6 +71,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         vendor/tesla/prebuilt/bin/sysinit:system/bin/sysinit
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/tesla/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/tesla/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Init script file with DarkKat extras
 PRODUCT_COPY_FILES += \
     vendor/tesla/prebuilt/etc/init.local.rc:root/init.tesla.rc
