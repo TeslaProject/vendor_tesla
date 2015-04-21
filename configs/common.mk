@@ -45,7 +45,8 @@ PRODUCT_PACKAGES += \
  # Additional packages
  PRODUCT_PACKAGES += \
     AudioFX \
-    LockClock
+    LockClock \
+    OmniSwitch
      
 # Enable sip+voip on all targets
 PRODUCT_COPY_FILES += \
