@@ -35,7 +35,7 @@ $(call inherit-product, vendor/tesla/config/apns.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/tesla/config/common.mk)
+$(call inherit-product, vendor/tesla/configs/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/samsung/i9300/i9300.mk)
